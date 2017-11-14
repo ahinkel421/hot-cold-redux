@@ -1,19 +1,22 @@
 //ACTIONS
 
-export const SET_GUESSES = 'SET_GUESSES';
-export const setGuesses = guesses => ({
-    type: SET_GUESSES,
-    guesses
+export const SET_NEW_GAME = 'SET_NEW_GAME';
+export const setNewGame = () => ({
+    type: SET_NEW_GAME,
+    guesses: [],
+    feedback: 'Make your guess!',
+    correctAnswer: Math.floor(Math.random() * 100) + 1
 });
 
-export const SET_FEEDBACK = 'SET_FEEDBACK';
-export const setFeedback = feedback => ({
+export const SET_GUESS = 'SET_GUESS';
+export const setGuess = (guess) => ({
     type: SET_FEEDBACK,
-    feedback
+    guess
+    //why guess? guess is not part of state..wouldn't it be:
+    // guesses: [guess]
 });
 
-export const SET_CORRECT_ANSWER = 'SET_CORRECT_ANSWER';
-export const setCorrectAnswer = correctAnswer => ({
-    type: SET_CORRECT_ANSWER,
-    correctAnswer
+export const TOGGLE_INFO = 'TOGGLE_INFO';
+export const toggleInfo = () => ({
+    type: TOGGLE_INFO,
 });
