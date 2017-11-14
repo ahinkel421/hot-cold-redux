@@ -1,6 +1,6 @@
 //REDUCERS
 
-//import {actions} from '../actions';
+import {SET_GUESSES, SET_FEEDBACK, SET_CORRECT_ANSWER} from '../actions';
 
 const initialState = {
 	guesses: [],
