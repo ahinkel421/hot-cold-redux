@@ -12,8 +12,6 @@ export const SET_GUESS = 'SET_GUESS';
 export const setGuess = (guess) => ({
     type: SET_GUESS,
     guess
-    //why guess? guess is not part of state..wouldn't it be:
-    // guesses: [guess]
 });
 
 export const TOGGLE_INFO = 'TOGGLE_INFO';
