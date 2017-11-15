@@ -10,7 +10,7 @@ export const setNewGame = () => ({
 
 export const SET_GUESS = 'SET_GUESS';
 export const setGuess = (guess) => ({
-    type: SET_FEEDBACK,
+    type: SET_GUESS,
     guess
     //why guess? guess is not part of state..wouldn't it be:
     // guesses: [guess]
