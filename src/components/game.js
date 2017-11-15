@@ -13,7 +13,7 @@ export default class Game extends React.Component {
             correctAnswer: Math.floor(Math.random() * 100) + 1
         };
     }
-
+    //This turns into an action
     newGame() {
         this.setState({
             guesses: [],
@@ -21,7 +21,7 @@ export default class Game extends React.Component {
             correctAnswer: Math.floor(Math.random() * 100) + 1
         });
     }
-
+    //This turns into an action
     guess(guess) {
         guess = parseInt(guess, 10);
         if (isNaN(guess)) {

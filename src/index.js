@@ -13,3 +13,16 @@ ReactDOM.render(
     </Provider>,
     document.getElementById('root')
 );
+
+//Notes:
+
+//Have to connect all components to store.
+//export default connect()(componentName)
+
+//Or, if the component takes props:
+
+//const mapStateToProps = state => ({
+//	prop: state.prop
+//});
+
+//export default connect(prop)(component)

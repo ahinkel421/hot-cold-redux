@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {connect} from 'react-redux';
 import './guess-list.css';
 
 export default function GuessList(props) {
