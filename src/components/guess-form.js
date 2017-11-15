@@ -12,11 +12,11 @@ export class GuessForm extends React.Component {
 
     render() {
         return (
-            <form onSubmit={e => this.onGuess(e)}>
+            <form onSubmit={e => this.onGuess(e)} >
                 <label htmlFor="userGuess">Enter your Guess</label>
                 <input type="text" name="userGuess" id="userGuess"
                     className="text" maxLength="3" autoComplete="off"
-                    placeholder={Math.round(Math.random() * 100)} required
+                    placeholder='Pick a number!' required
                     ref={input => this.input = input} />
                 <input type="submit" id="guessButton" className="button" name="submit" value="Guess"/>
             </form>
@@ -25,8 +25,6 @@ export class GuessForm extends React.Component {
 };
 
 const mapStateToProps = state => ({
-    guessCount: state.guesses.length,
-    //What is guessCount??? Where else do we user this?
     correctAnswer: state.correctAnswer
 });
 

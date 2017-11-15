@@ -20,3 +20,11 @@ export const TOGGLE_INFO = 'TOGGLE_INFO';
 export const toggleInfo = () => ({
     type: TOGGLE_INFO,
 });
+
+//actions are what the user can do. In this app the user can:
+
+//click new game, to start a new game
+//make a guess
+//and click 'what?' to get more info.
+
+//...hence the three actions above.
