@@ -16,7 +16,7 @@ export const setGuess = (guess) => ({
 
 export const TOGGLE_INFO = 'TOGGLE_INFO';
 export const toggleInfo = () => ({
-    type: TOGGLE_INFO,
+    type: TOGGLE_INFO
 });
 
 //actions are what the user can do. In this app the user can:

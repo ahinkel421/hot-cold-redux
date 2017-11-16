@@ -2,7 +2,7 @@
 
 import {SET_NEW_GAME, SET_GUESS, TOGGLE_INFO} from '../actions';
 
-const initialState = {
+export const initialState = {
 	guesses: [],
     feedback: 'Make your guess!',
     correctAnswer: Math.floor(Math.random() * 100) + 1,
